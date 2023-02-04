@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 232.56 sec <<< FAILURE! - in TestSuite
+validateLogo(scripts.CarvanaBasePageTest)  Time elapsed: 10.809 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mihails-MacBook-Pro.local', ip: 'fe80:0:0:0:88d:aa67:690f:b837%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/34/w8_bwfhx3m5...}, goog:chromeOptions: {debuggerAddress: localhost:49587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 18e94ddc71ff45180f88a0552ca5cfb4
+	at scripts.CarvanaBasePageTest.validateLogo(CarvanaBasePageTest.java:42)
+

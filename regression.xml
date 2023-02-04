@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test verbose="2" preserve-order="true" name="/Users/mihailhariton/IdeaProjects/testng_third_project/src/test/java">
+        <classes>
+            <class name="scripts.CarvanaBasePageTest">
+                <methods>
+                    <include name="validateTitleAndURL"/>
+                    <include name="validateLogo"/>
+                    <include name="validateMainNavItems"/>
+                    <include name="validateSignInErrorMessage"/>
+                    <include name="validateSearchFilterOptionsAndSearchButton"/>
+                    <include name="validateSearchResultsTiles"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
