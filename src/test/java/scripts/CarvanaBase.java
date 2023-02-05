@@ -13,7 +13,7 @@ import utilities.Driver;
 public class CarvanaBase {
 
     public WebDriver driver;
-    SoftAssert softAssert;
+    //SoftAssert softAssert;
     CarvanaBasePage carvanaBasePage;
     CarvanaSearchCarsPage carvanaSearchCarsPage;
     CarvanaSearchResultsPage carvanaSearchResultsPage;
@@ -26,7 +26,7 @@ public class CarvanaBase {
         driver = Driver.getDriver();
         // get the URL
         driver.get(ConfigReader.getProperty("appURL"));
-        softAssert = new SoftAssert();
+        //softAssert = new SoftAssert();
         carvanaSearchCarsPage = new CarvanaSearchCarsPage();
         carvanaSearchResultsPage = new CarvanaSearchResultsPage();
     }
@@ -34,7 +34,7 @@ public class CarvanaBase {
     // after method for quiting driver
     @AfterMethod
     public void teardown(){
-        softAssert.assertAll();
+       // softAssert.assertAll();
         Driver.quitDriver();
     }
 }

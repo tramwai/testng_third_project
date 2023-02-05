@@ -39,8 +39,8 @@ public class CarvanaBasePageTest extends CarvanaBase{
 
     @Test(priority = 2, description = "Validate the Carvana logo")
     public void validateLogo() {
-        Waiter.waitForVisibilityOfElement(carvanaBasePage.logo, 60);
-        softAssert.assertTrue(carvanaBasePage.logo.isDisplayed());
+        Waiter.waitForVisibilityOfElement(carvanaBasePage.logo, 30);
+        Assert.assertTrue(carvanaBasePage.logo.isDisplayed());
     }
 
     /**
@@ -57,8 +57,8 @@ public class CarvanaBasePageTest extends CarvanaBase{
     public void validateMainNavItems(){
         Waiter.pause(30);
         for (int i = 0; i < 3; i++) {
-            softAssert.assertTrue(carvanaBasePage.mainNavigationItems.get(i).isDisplayed());
-            softAssert.assertEquals(carvanaBasePage.mainNavigationItems.get(i).getText(),
+            Assert.assertTrue(carvanaBasePage.mainNavigationItems.get(i).isDisplayed());
+            Assert.assertEquals(carvanaBasePage.mainNavigationItems.get(i).getText(),
                                                     TestData.mainNavigationItemsText[i]);
         }
     }
@@ -155,24 +155,24 @@ public class CarvanaBasePageTest extends CarvanaBase{
 
     @Test(priority = 6, description = "Validate the search result tiles")
     public void validateSearchResultsTiles(){
-        //Waiter.waitForVisibilityOfElement(carvanaBasePage.searchCarsLink, 30);
+        Waiter.waitForVisibilityOfElement(carvanaBasePage.searchCarsLink, 30);
         Waiter.waitForElementTobeClickable(carvanaBasePage.searchCarsLink, 30);
         // When user clicks on "SEARCH CARS" link
         carvanaBasePage.searchCarsLink.click();
         // Then user should be routed to "https://www.carvana.com/cars"
-        //Waiter.waitForVisibilityOfElement(carvanaSearchCarsPage.filterOptions.get(1), 30);
+        Waiter.waitForVisibilityOfElement(carvanaSearchCarsPage.filterOptions.get(1), 30);
         Assert.assertEquals(driver.getCurrentUrl(), TestData.searchCarsURL);
         // When user enters "mercedes-benz" to the search input box
         carvanaSearchCarsPage.searchInputBox.sendKeys(TestData.mercedesBenzText);
         //  And user clicks on "GO" button in the search input box
         carvanaSearchCarsPage.goButton.click();
-        Waiter.pause(10);
+        Waiter.pause(3);
 
         // validate all result pages
-       // while (carvanaSearchResultsPage.nextPageButton.isEnabled()){
+        //while (carvanaSearchResultsPage.nextPageButton.isEnabled()){
 
-            // hen user should see "mercedes-benz" in the url
-            softAssert.assertTrue(driver.getCurrentUrl().contains(TestData.mercedesBenzText));
+            // then user should see "mercedes-benz" in the url
+            Assert.assertTrue(driver.getCurrentUrl().contains(TestData.mercedesBenzText));
 
             // And validate each result tile
             // Make sure each result tile is displayed with below information
@@ -221,9 +221,9 @@ public class CarvanaBasePageTest extends CarvanaBase{
                 Assert.assertFalse(carvanaSearchResultsPage.tileDeliveryChips.get(i).getText().isEmpty());
             }
             // click on the next page button
-            //Waiter.waitForVisibilityOfElement(carvanaSearchResultsPage.nextPageButton, 30);
+           // Waiter.waitForVisibilityOfElement(carvanaSearchResultsPage.nextPageButton, 30);
             //Waiter.waitForElementTobeClickable(carvanaSearchResultsPage.nextPageButton, 30);
-           /// carvanaSearchResultsPage.nextPageButton.click();
-      //  }
+            //carvanaSearchResultsPage.nextPageButton.click();
+       //}
     }
 }

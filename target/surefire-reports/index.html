@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression">
-              <span class="suite-name border-failed">Regression</span>
+              <span class="suite-name border-passed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
-                    </span>
-                    <div class="method-list-content failed suite-Regression">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="scripts.CarvanaBasePageTest" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
                     </span>
                     <div class="method-list-content passed suite-Regression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="scripts.CarvanaBasePageTest" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="scripts.CarvanaBasePageTest" hash-for-method="validateMainNavItems">validateMainNavItems</a> <!-- method navigator-link -->
@@ -151,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
+          <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">scripts.CarvanaBasePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,84 +153,10 @@
                   <a name="validateLogo">
                   </a> <!-- validateLogo -->
                   <span class="method-name">validateLogo</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=109.0.5414.119)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Mihails-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:88d:aa67:690f:b837%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/34/w8_bwfhx3m5...}, goog:chromeOptions: {debuggerAddress: localhost:49587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 18e94ddc71ff45180f88a0552ca5cfb4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at utilities.Waiter.waitForVisibilityOfElement(Waiter.java:17)
-	at scripts.CarvanaBasePageTest.validateLogo(CarvanaBasePageTest.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-
-</div> <!-- stack-trace -->
                   <em>
 (Validate the Carvana logo)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
-          <div class="suite-Regression-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">scripts.CarvanaBasePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="validateMainNavItems">
@@ -297,7 +214,7 @@ Session ID: 18e94ddc71ff45180f88a0552ca5cfb4
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;/Users/mihailhariton/IdeaProjects/testng_third_project/src/test/java&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;/Users/mihailhariton/IdeaProjects/testng_third_project&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;scripts.CarvanaBasePageTest&quot;&gt;
         &lt;methods&gt;
@@ -310,7 +227,7 @@ Session ID: 18e94ddc71ff45180f88a0552ca5cfb4
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- scripts.CarvanaBasePageTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- /Users/mihailhariton/IdeaProjects/testng_third_project/src/test/java --&gt;
+  &lt;/test&gt; &lt;!-- /Users/mihailhariton/IdeaProjects/testng_third_project --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -322,7 +239,7 @@ Session ID: 18e94ddc71ff45180f88a0552ca5cfb4
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">/Users/mihailhariton/IdeaProjects/testng_third_project/src/test/java (1 class)</span>
+                <span class="test-name">/Users/mihailhariton/IdeaProjects/testng_third_project (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -352,27 +269,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateSearchResultsTiles')
 data.setCell(0, 2, 'scripts.CarvanaBasePageTest')
-data.setCell(0, 3, 37459);
+data.setCell(0, 3, 32176);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateMainNavItems')
 data.setCell(1, 2, 'scripts.CarvanaBasePageTest')
-data.setCell(1, 3, 30535);
+data.setCell(1, 3, 30444);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validateSearchFilterOptionsAndSearchButton')
 data.setCell(2, 2, 'scripts.CarvanaBasePageTest')
-data.setCell(2, 3, 14446);
+data.setCell(2, 3, 17476);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateLogo')
+data.setCell(3, 1, 'validateSignInErrorMessage')
 data.setCell(3, 2, 'scripts.CarvanaBasePageTest')
-data.setCell(3, 3, 10791);
+data.setCell(3, 3, 8461);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validateTitleAndURL')
 data.setCell(4, 2, 'scripts.CarvanaBasePageTest')
-data.setCell(4, 3, 10270);
+data.setCell(4, 3, 1527);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateSignInErrorMessage')
+data.setCell(5, 1, 'validateLogo')
 data.setCell(5, 2, 'scripts.CarvanaBasePageTest')
-data.setCell(5, 3, 9356);
+data.setCell(5, 3, 1374);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
@@ -410,97 +327,95 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setPage</span>
-                <span class="method-start">15885 ms</span>
+                <span class="method-start">23888 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateTitleAndURL</span>
-                <span class="method-start">15887 ms</span>
+                <span class="method-start">23891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">26166 ms</span>
+                <span class="method-start">25425 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">26577 ms</span>
+                <span class="method-start">25654 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setPage</span>
-                <span class="method-start">41144 ms</span>
+                <span class="method-start">49326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateLogo</span>
-                <span class="method-start">41146 ms</span>
+                <span class="method-start">49328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">51952 ms</span>
+                <span class="method-start">50703 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">52474 ms</span>
+                <span class="method-start">50902 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setPage</span>
-                <span class="method-start">67882 ms</span>
+                <span class="method-start">65705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateMainNavItems</span>
-                <span class="method-start">67886 ms</span>
+                <span class="method-start">65708 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">98424 ms</span>
+                <span class="method-start">96152 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">98575 ms</span>
+                <span class="method-start">96325 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setPage</span>
-                <span class="method-start">123130 ms</span>
+                <span class="method-start">119409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateSignInErrorMessage</span>
-                <span class="method-start">123137 ms</span>
+                <span class="method-start">119417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">132496 ms</span>
+                <span class="method-start">127880 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">132657 ms</span>
+                <span class="method-start">128037 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setPage</span>
-                <span class="method-start">155453 ms</span>
+                <span class="method-start">150170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateSearchFilterOptionsAndSearchButton</span>
-                <span class="method-start">155459 ms</span>
+                <span class="method-start">150177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">169906 ms</span>
+                <span class="method-start">167658 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">170067 ms</span>
+                <span class="method-start">167824 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setPage</span>
-                <span class="method-start">194101 ms</span>
+                <span class="method-start">190944 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateSearchResultsTiles</span>
-                <span class="method-start">194107 ms</span>
+                <span class="method-start">190948 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">231573 ms</span>
+                <span class="method-start">223131 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

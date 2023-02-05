@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="232.56" tests="6" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="224.162" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home/jre/lib"/>
@@ -60,29 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="validateTitleAndURL" classname="scripts.CarvanaBasePageTest" time="10.283"/>
-  <testcase name="validateLogo" classname="scripts.CarvanaBasePageTest" time="10.809">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=109.0.5414.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Mihails-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:88d:aa67:690f:b837%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_341&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/34/w8_bwfhx3m5...}, goog:chromeOptions: {debuggerAddress: localhost:49587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 18e94ddc71ff45180f88a0552ca5cfb4" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=109.0.5414.119)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Mihails-MacBook-Pro.local', ip: 'fe80:0:0:0:88d:aa67:690f:b837%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/34/w8_bwfhx3m5...}, goog:chromeOptions: {debuggerAddress: localhost:49587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 18e94ddc71ff45180f88a0552ca5cfb4
-	at scripts.CarvanaBasePageTest.validateLogo(CarvanaBasePageTest.java:42)
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 1372
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 04, 2023 9:53:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="validateMainNavItems" classname="scripts.CarvanaBasePageTest" time="30.536"/>
-  <testcase name="validateSignInErrorMessage" classname="scripts.CarvanaBasePageTest" time="9.358"/>
-  <testcase name="validateSearchFilterOptionsAndSearchButton" classname="scripts.CarvanaBasePageTest" time="14.446"/>
-  <testcase name="validateSearchResultsTiles" classname="scripts.CarvanaBasePageTest" time="37.464"/>
+  <testcase name="validateTitleAndURL" classname="scripts.CarvanaBasePageTest" time="1.539"/>
+  <testcase name="validateLogo" classname="scripts.CarvanaBasePageTest" time="1.374"/>
+  <testcase name="validateMainNavItems" classname="scripts.CarvanaBasePageTest" time="30.442"/>
+  <testcase name="validateSignInErrorMessage" classname="scripts.CarvanaBasePageTest" time="8.46"/>
+  <testcase name="validateSearchFilterOptionsAndSearchButton" classname="scripts.CarvanaBasePageTest" time="17.481"/>
+  <testcase name="validateSearchResultsTiles" classname="scripts.CarvanaBasePageTest" time="32.182"/>
 </testsuite>
